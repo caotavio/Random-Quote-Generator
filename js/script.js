@@ -20,29 +20,29 @@ let quotes = [
   {
     quote: 'Before enlightenment: chop wood, carry water. After enlightenment: chop wood, carry water.',
     source: 'Buddha',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
     quote: 'The search for happiness is one of the chief sources of unhappiness.',
     source: 'Eric Hoffer',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
     quote: 'Relax, nothing is under control.',
     source: 'Adi Da',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
     quote: 'Nothing ever goes away until it has taught us what we need to know.',
     source: 'Pema Chödrön',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
@@ -62,35 +62,35 @@ let quotes = [
   {
     quote: 'Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup.',
     source: 'Bruce Lee',
-    citation: ,
-    year:
+    citation: '(Enter the Dragon)',
+    year: ' '
   },
 
   {
     quote: 'Wherever you are, be there totally.',
     source: 'Eckhart Tolle',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
     quote: 'Every experience is a lesson. Every loss is a gain.',
     source: 'Sathya Sai Baba',
-    citation: ,
-    year:
+    citation: ' ',
+    year: ' '
   },
 
   {
     quote: 'Mastering others is strength, mastering yourself is true power.',
     source: 'Lao Tsu',
     citation: '(The Tao Te Ching)',
-    year:
+    year: ' '
   },
 
   {
     quote: 'A vida é massa. (Life is awesome)',
     source: 'Mitoso',
-    citation: ,
+    citation: ' ',
     year: 2018
   },
 
