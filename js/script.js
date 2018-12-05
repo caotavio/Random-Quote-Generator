@@ -102,6 +102,11 @@ let quotes = [
   }
 ];
 
+let quote;
+let source;
+let citation;
+let year;
+let randomNumber;
 
 /***
   Create the `getRandomQuote` function to:
@@ -110,14 +115,10 @@ let quotes = [
      `quotes` array.
 ***/
 
-function getRandomQuote (arr) {
-  if(i = 0; i < quotes.length; i++) {
-    let randomQuote = Math.floor(Math.random() * quotes[i]) + 1);
-  }
-  return randomQuote;
+function getRandomQuote (array) {
+  randomNumber = Math.floor(Math.random() * quotes.length);
+  return array[randomNumber];
 }
-
-console.log(getRandomQuote(quotes));
 
 /***
   Create the `printQuote` function to:
