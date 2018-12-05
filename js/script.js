@@ -21,84 +21,84 @@ let quotes = [
     quote: 'Before enlightenment: chop wood, carry water. After enlightenment: chop wood, carry water.',
     source: 'Buddha',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'The search for happiness is one of the chief sources of unhappiness.',
     source: 'Eric Hoffer',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'Relax, nothing is under control.',
     source: 'Adi Da',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'Nothing ever goes away until it has taught us what we need to know.',
     source: 'Pema Chödrön',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'If a warrior is not unattached to life and death, he will be of no use whatsoever.',
     source: 'Yamamoto Tsunetomo',
     citation: '(Hagakure: The Book of the Samurai)',
-    year: 1716,
-  },
+    year: 1716
+  }
 
   {
     quote: 'The place to improve the world is first in one`s own heart and head and hands.',
     source: 'Robert M. Pirsig',
     citation: '(Zen and the Art of Motorcycle Maintenance)',
-    year: 1974,
+    year: 1974
   },
 
   {
     quote: 'Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup.',
     source: 'Bruce Lee',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'Wherever you are, be there totally.',
     source: 'Eckhart Tolle',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'Every experience is a lesson. Every loss is a gain.',
     source: 'Sathya Sai Baba',
     citation: ,
-    year: ,
+    year:
   },
 
   {
     quote: 'Mastering others is strength, mastering yourself is true power.',
     source: 'Lao Tsu',
     citation: '(The Tao Te Ching)',
-    year: ,
+    year:
   },
 
   {
     quote: 'A vida é massa. (Life is awesome)',
     source: 'Mitoso',
     citation: ,
-    year: 2018,
+    year: 2018
   },
 
   {
     quote: 'You have to let it all go. Fear, doubt and disbelief. Free your mind.',
     source: 'Morpheus',
     citation: '(The Matrix)',
-    year: 1999,
+    year: 1999
   }
 ];
 
