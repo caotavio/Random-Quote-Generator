@@ -1,48 +1,23 @@
-/******************************************
-Treehouse Techdegree:
-FSJS project 1 - A Random Quote Generator
-******************************************/
-
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
-
-/***
-  Create the array of quote objects and name it `quotes`.
-  Add at least five quote objects to the `quotes` array.
-  Give each quote object a `quote` and `source` property.
-
-  Recommended:
-    - Add at least one `year` and/or `citation` property to at least one
-      quote object.
-***/
 
 let quotes = [
   {
     quote: 'Before enlightenment: chop wood, carry water. After enlightenment: chop wood, carry water.',
-    source: 'Buddha',
-    citation: ' ',
-    year: ' '
+    source: 'Buddha'
   },
 
   {
     quote: 'The search for happiness is one of the chief sources of unhappiness.',
-    source: 'Eric Hoffer',
-    citation: ' ',
-    year: ' '
+    source: 'Eric Hoffer'
   },
 
   {
     quote: 'Relax, nothing is under control.',
-    source: 'Adi Da',
-    citation: ' ',
-    year: ' '
+    source: 'Adi Da'
   },
 
   {
     quote: 'Nothing ever goes away until it has taught us what we need to know.',
-    source: 'Pema Chödrön',
-    citation: ' ',
-    year: ' '
+    source: 'Pema Chödrön'
   },
 
   {
@@ -50,7 +25,7 @@ let quotes = [
     source: 'Yamamoto Tsunetomo',
     citation: '(Hagakure: The Book of the Samurai)',
     year: 1716
-  }
+  },
 
   {
     quote: 'The place to improve the world is first in one`s own heart and head and hands.',
@@ -62,35 +37,28 @@ let quotes = [
   {
     quote: 'Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup.',
     source: 'Bruce Lee',
-    citation: '(Enter the Dragon)',
-    year: ' '
+    citation: '(Enter the Dragon)'
   },
 
   {
     quote: 'Wherever you are, be there totally.',
-    source: 'Eckhart Tolle',
-    citation: ' ',
-    year: ' '
+    source: 'Eckhart Tolle'
   },
 
   {
     quote: 'Every experience is a lesson. Every loss is a gain.',
-    source: 'Sathya Sai Baba',
-    citation: ' ',
-    year: ' '
+    source: 'Sathya Sai Baba'
   },
 
   {
     quote: 'Mastering others is strength, mastering yourself is true power.',
     source: 'Lao Tsu',
-    citation: '(The Tao Te Ching)',
-    year: ' '
+    citation: '(The Tao Te Ching)'
   },
 
   {
     quote: 'A vida é massa. (Life is awesome)',
     source: 'Mitoso',
-    citation: ' ',
     year: 2018
   },
 
@@ -102,18 +70,9 @@ let quotes = [
   }
 ];
 
-let quote;
-let source;
-let citation;
-let year;
 let randomNumber;
-
-/***
-  Create the `getRandomQuote` function to:
-   - generate a random number
-   - use the random number to `return` a random quote object from the
-     `quotes` array.
-***/
+let randomQuote;
+let html = ' ';
 
 function getRandomQuote (array) {
   randomNumber = Math.floor(Math.random() * quotes.length);
@@ -130,6 +89,19 @@ function getRandomQuote (array) {
    - set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 
+function printQuote () {
+  randomQuote = getRandomQuote(quotes);
+  html = '<h2>' + randomQuote.quote + ' ';
+  html += randomQuote.source;
+  if (randomQuote.citation) {
+    html += ' ' + randomQuote.citation;
+  }
+  if (randomQuote.year) {
+    html += ' ' + randomQuote.year;
+  }
+  html += '</h2>';
+  return html;
+}
 
 
 
