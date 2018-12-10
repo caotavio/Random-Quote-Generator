@@ -91,18 +91,18 @@ function getRandomQuote (array) {
 
 function printQuote () {
   randomQuote = getRandomQuote(quotes);
-  html = '<h2>' + randomQuote.quote + ' ';
-  html += randomQuote.source;
+  html = '<p class="quote">' + randomQuote.quote + '</p>';
+  html += '<p class="source">' + randomQuote.source;
   if (randomQuote.citation) {
-    html += ' ' + randomQuote.citation;
+    html += '<span class="citation">' + randomQuote.citation + '</span>';
   }
   if (randomQuote.year) {
-    html += ' ' + randomQuote.year;
+    html += '<span class="year">' + randomQuote.year + '</span>';
   }
-  html += '</h2>';
-  return html;
-}
+  html += '</p>';
 
+  document.getElementById('quote-box').innerHTML = html;
+}
 
 
 /***
