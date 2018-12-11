@@ -77,7 +77,7 @@ let quotes = [
 regardless of how many objects the array contains.
 */
 function getRandomQuote (array) {
-  randomNumber = Math.floor(Math.random() * quotes.length);
+  randomNumber = Math.floor(Math.random() * array.length);
   return array[randomNumber];
 }
 
