@@ -1,3 +1,6 @@
+let randomNumber;
+let randomQuote;
+let html = ' ';
 
 let quotes = [
   {
@@ -70,25 +73,21 @@ let quotes = [
   }
 ];
 
-let randomNumber;
-let randomQuote;
-let html = ' ';
-
+/* This function returns a random number between the quotes array indexess,
+regardless of how many objects the array contains.
+*/
 function getRandomQuote (array) {
   randomNumber = Math.floor(Math.random() * quotes.length);
   return array[randomNumber];
 }
 
-/***
-  Create the `printQuote` function to:
-   - call the `getRandomQuote` function and assign it to a variable.
-   - use the properties of the quote object stored in the variable to
-     create your HTML string.
-   - use conditionals to make sure the optional properties exist before
-     they are added to the HTML string.
-   - set the `innerHTML` of the `quote-box` div to the HTML string.
-***/
-
+/* 1. This function calls the getRandomQuote() function to randomly select an object
+from the array and selects each of the properties on that object to form a string.
+2. The if statements includes properties that are not on every object and conditionally
+adds them to the string if they exist.
+3. The last line links the selected quote to the DOM, aplying the structure and style
+displayed.
+*/
 function printQuote () {
   randomQuote = getRandomQuote(quotes);
   html = '<p class="quote">' + randomQuote.quote + '</p>';
@@ -104,15 +103,5 @@ function printQuote () {
   document.getElementById('quote-box').innerHTML = html;
 }
 
-
-/***
-  When the "Show another quote" button is clicked, the event listener
-  below will be triggered, and it will call, or "invoke", the `printQuote`
-  function. So do not make any changes to the line of code below this
-  comment.
-***/
-
+// Calls the printQuote() function, displaying a new quote when the button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
